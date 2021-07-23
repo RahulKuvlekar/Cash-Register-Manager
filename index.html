@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CashRegister-Manager</title>
+    <link rel="stylesheet" href="./Assets/Style/component.css" />
+    <link rel="stylesheet" href="./Assets/Style/Style.css" />
+    <script
+      src="https://kit.fontawesome.com/dd35a950d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Assets/Script/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="nav-brand">CASH REGISTER MANAGER</h1>
+      </nav>
+    </header>
+    <main>
+      <section class="fluid-cointainer">
+        <h4>
+          Enter the bill amount and cash given by the customer and know minimum
+          number of notes to return.
+        </h4>
+
+        <!-- SECTION Bill Amount -->
+        <div id="bill-amount" class="box">
+          <h2>Bill Amount :</h2>
+          <input type="number" name="" id="total-bill" />
+          <button class="btn btn-alternate">Next</button>
+        </div>
+
+        <!-- SECTION cash Amount -->
+        <div id="cash-amount" class="box notVisible">
+          <h2>Cash Given :</h2>
+          <input type="number" name="" id="total-cash" />
+          <button class="btn btn-alternate">Check</button>
+        </div>
+
+        <!-- SECTION Error Amount -->
+        <span id="errorMsg" class="notVisible"></span>
+
+        <!-- SECTION return Amount -->
+        <div id="return-amount" class="box notVisible">
+          <h2>Return Change : <span id="return-value"></span></h2>
+          <table>
+            <tbody>
+              <tr id="">
+                <th>Notes</th>
+                <th>2000</th>
+                <th>500</th>
+                <th>100</th>
+                <th>20</th>
+                <th>10</th>
+                <th>5</th>
+                <th>1</th>
+              </tr>
+              <tr id="notes-number">
+                <th>No Of Notes</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3 class="footer-brand ">Social Media Handles</h3>
+      <ul class="footer-links">
+        <li>
+          <a href="https://github.com/RahulKuvlekar" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/RahulKuvlekar" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/rahulkuvlekar" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/rahul_kuvlekar_/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

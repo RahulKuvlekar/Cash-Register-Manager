@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Noto+Sans+JP:wght@500&family=Source+Sans+Pro&display=swap");
+
+:root {
+  --primary-color: #fcbf49;
+  --secondary-color: #f77f00;
+  --text-color: #ffffff;
+  --nav-color: #003049;
+  --alert-color: #d62828;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fdd686;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nav-brand{
+  font-size: xx-large;
+}
+footer,
+nav {
+  text-align: center;
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--text-color);
+  background-color: var(--nav-color);
+  /* font-family: 'Manrope', sans-serif; */
+}
+footer {
+  margin-top: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0.6rem 0.2rem;
+}
+.footer-links li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+input[type="number"] {
+  display: block;
+  margin: 0.5rem auto;
+  height: 2.5rem;
+  width: 90%;
+  max-width: 300px;
+  padding: 0.5rem;
+  font-size: x-large;
+  color: var(--nav-color);
+  background-color: #fce1ad;
+  border: 1px solid var(--nav-color);
+  border-radius: 5px;
+}
+
+.container {
+  width: 100%;
+}
+
+.fluid-cointainer {
+  padding: 1rem;
+  width: 90%;
+  max-width: 800px;
+  color: var(--nav-color);
+  background-color: var(--primary-color);
+  margin: 2rem auto;
+}
+
+.box {
+  margin: 1rem;
+  text-align: center;
+}
+
+button {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.btn-primary {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--text-color);
+}
+.btn-primary:hover {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--text-color);
+}
+
+.btn-secondary {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+.btn-secondary:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--text-color);
+}
+
+.btn-alternate {
+  color: var(--text-color);
+  background-color: var(--nav-color);
+  border: 1px solid var(--text-color);
+}
+
+.btn-alternate:hover {
+  color: var(--nav-color);
+  background-color: var(--text-color);
+  border: 1px solid var(--nav-color);
+}
+
+#errorMsg {
+  display: block;
+  color: red;
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+}
+.notVisible,
+#errorMsg.notVisible {
+  visibility: hidden;
+  display: none;
+}
