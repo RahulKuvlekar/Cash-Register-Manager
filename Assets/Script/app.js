@@ -80,7 +80,7 @@ const nextBtnHandler = () => {
 
 const checkBtnHandler = () => {
     
-    document.querySelector("footer").style.position = "relative";
+    // document.querySelector("footer").style.position = "relative";
   const cashGiven = +cashGivenAmount.value.trim();
   const totalBill = +totalBillAmount.value.trim();
 
