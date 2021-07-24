@@ -1,13 +1,8 @@
-
-
 #return-value {
   color: red;
   font-size: x-large;
   font-weight: bolder;
 }
-
-
-
 
 table {
   border: 1px solid black;
@@ -23,11 +18,43 @@ td {
 }
 
 td {
-  background-color: #fce1ad
+  background-color: #fce1ad;
 }
-
 
 #return-amount table {
   text-align: center;
   margin: 1rem auto;
+}
+header {
+  background-color: var(--nav-color);
+}
+nav.fluid-cointainer {
+  margin: 0 auto;
+}
+
+section.fluid-cointainer {
+  color: var(--nav-color);
+  background-color: var(--primary-color);
+  margin: 2rem auto;
+}
+.note-text {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+#return-amount{
+  text-align: center;
+}
+
+@media all and (max-width: 768px) {
+  .nav-brand {
+    font-size: x-large;
+  }
+  .footer-brand{
+    font-size:small;
+  }
+  nav h1:first-child {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding-bottom: 1rem;
+  }
 }
